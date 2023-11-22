@@ -367,6 +367,7 @@ body.dark h1, body.dark .support a {color: #fff;}
 }
 .div{
     padding: 100px;
+    padding-bottom: 0;
 }
 
 .checkbox-label {
