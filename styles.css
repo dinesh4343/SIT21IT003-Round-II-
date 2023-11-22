@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap'); 
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+header {
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    padding: 10px;
+    transition: all .5s ease;
+    background-color: #00498a;
+}
+.logo{
+    width: 100px;
+    filter: drop-shadow(0 0 20px white);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+
+}
+.navbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+.nav-components {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.links li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-btn {
+    font-size: 1.2rem;
+    padding: 10px;
+    color: #eeeeee;
+    position: relative;
+    overflow: hidden;
+    
+}
+.nav-btn::after{
+    content:"";
+    display: block;
+    height: 4px;
+    width: 98%;
+    text-decoration-line:none;
+    background-color: rgba(168,207,69,255);
+    transform: scalex(0);
+    transition: transform 0.5s ease;
+    transform-origin: center;
+}
+
+.nav-btn:hover::after{
+    transform: scalex(1);
+    text-decoration: none;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    transition: .5s all ease-in-out;
+}
+
+.links a:hover {
+    color: rgba(168,207,69,255);
+}
+.faq{
+    background-color: #00498a;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 4%;
+    align-items: center;
+    justify-content: center;
+}
+.faq h1{
+    font-size: 40px;
+    color: #eeeeee;
+}
+.faq p{
+    font-size: 20px;
+    color: #b6b1b1;
+}
+@media (max-width:1280px) {
+    header {
+        padding: 14px 2%;
+        transition: .2s;
+    }
+
+    .navbar a {
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+
+}
+
+
+@media (max-width: 980px) {
+    .toggle_btn {
+        display: block;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 8%;
+        right: 0;
+        width: 280px;
+        height: 100vh;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 50px;
+        background-color: #1b252ff5;
+        /* backdrop-filter: blur(20px); */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transform: translateX(100%);
+        transition: transform .50s ease;
+        gap: 30px;
+    }
+
+    .links {
+        flex-direction: column;
+        padding: 0;
+        padding-top: 30px
+    }
+
+    .navbar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+
+    .navbar a:hover {
+        color: #f0c382;
+        text-decoration: underline;
+    }
+
+    .navbar a.active {
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: visible;
+  font-family: poppins, monospace;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+  
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+
+  background: #4851f0;
+}
+
+body::-webkit-scrollbar-track {
+ 
+  border-radius: 5px;
+}
+
+@keyframes fadeAnimation {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.team {
+  text-align: center;
+  position: relative;
+  top: 60px;
+  left: -40px;
+  overflow: hidden;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-size: 35px;
+  color: #32407B;
+ font-weight: bolder;
+ 
+}
+
+
+
+.boxaccordion {
+  text-align: center;
+}
+
+.containerwidth {
+  position: relative;
+  top: 120px;
+  left: 14%;
+  width: 70%;
+  margin-bottom: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  padding: 20px;
+  position: relative;
+  background-color: #ffffff;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
+  overflow: hidden;
+}
+
+.toggle {
+  text-align: justify;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #32407B;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.content {
+  color: #32407B;
+  position: relative;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 30px;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+
+
+.toggle,
+.content {
+  font-family: "Poppins", sans-serif;
+  
+}
+
+
+@media (max-width: 768px) {
+  .containerwidth {
+    left: 10%;
+    width: 80%;
+  }
+  
+  .wrapper {
+    overflow: auto;
+  }
+  .team{
+    left: -10px;
+    font-weight: 500;
+  }
+  .div{
+    padding: 0px;
+}
+} 
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {box-sizing: border-box;}
+
+
+body.dark {background-color: #292c35;} /* #9b59b6 */
+
+body.dark h1, body.dark .support a {color: #fff;}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+
+}
+.div{
+    padding: 100px;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 50px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {box-sizing: border-box;}
+
+
+
+
+body.dark {
+    background-color: #292c35;
+} /* #9b59b6 */
+
+body.dark h1, body.dark .support a {color: #fff;}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+
+
